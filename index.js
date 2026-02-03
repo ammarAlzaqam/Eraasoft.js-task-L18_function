@@ -106,7 +106,7 @@ function getFuelCost() {
   let finalPrice = pricePerLIter * litters;
   // 5% discount if paying cash
   const isPayingCash = confirm("Do you paying cash?");
-  let discount;
+  let discount = 0;
   if (isPayingCash) {
     discount = (5 / 100) * finalPrice;
     finalPrice -= discount;
